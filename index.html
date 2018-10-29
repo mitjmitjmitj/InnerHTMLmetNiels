@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!--FRONTEND (ALLES WAT IN BEELD KOMT)-->
+<div>Speler 1: <span id="score1">0</span> punten.</div>
+<div>Speler 2: <span id="score2">0</span> punten.</div>
+<button onclick="updateScore1()">SPELER 1</button>
+
+<!--JAVASCRIPT-->
+<script>
+    let punten1 = 0;
+    let punten2 = 0;
+    let updateScore1 = function() {
+        punten1++;
+        document.getElementById('punten1').innerHTML = punten1;
+    }
+</script>
+
+</body>
+</html>
